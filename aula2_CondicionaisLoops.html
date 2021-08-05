@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+  <title>Vue.js</title>
+</head>
+<body>
+
+  <div id="placar">
+    <div> {{ n }}</div>
+    <span v-if="n>5">Parabéns, você passou de 5 pontos!</span>
+    <span v-if="aparecer">Parabéns, você ganhou 10 pontos!</span>
+  </div> 
+
+  <!-- <div id='lista'>
+    <ul>
+      <li v-for='info in nomes'>
+        {{info.nome}}
+      </li>
+    </ul>
+  </div> -->
+
+  
+  <div id='lista'>
+    <ul>
+      <li v-for="info in nomes">
+          {{ info.nome+" "+info.sobrenome+" ,"+info.idade }} anos
+      </li>
+    </ul>
+  </div>
+
+
+  <script src="script2.js"></script>
+</body>
+</html>
