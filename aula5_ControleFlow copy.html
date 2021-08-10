@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+  <title>Vue.js</title>
+</head>
+<body>
+  
+<div id='app'>
+    <div v-if="pais == 'argentina'">
+      <p v-html='argentina'></p>    mostrar a bandeira
+      <p>América do Sul</p>
+    </div>
+
+    <div v-if="pais == 'brazil'">
+      <p v-html='brazil'></p>    mostrar a bandeira
+      <p>América do Sul</p>
+    </div>
+
+    <div v-if="pais == 'china'">
+      <p v-html='china'></p>    mostrar a bandeira
+      <p>Ásia</p>
+    </div>
+
+    <div v-if="pais == 'usa'">
+      <p v-html='usa'></p>    mostrar a bandeira
+      <p>América do Norte</p>
+    </div>
+
+    <div v-if="pais == 'uk'">
+      <p v-html='uk'></p>    mostrar a bandeira
+      <p>Europa</p>
+    </div> 
+</div>
+
+ <!-- Refatorando criando só um componente
+<div id='app2'></div>
+  <div>
+    <p v-html="(
+      pais =='argentina' ? argentina:
+      pais =='brazil' ? brazil:
+      pais =='argentina' ? argentina:
+      pais =='usa' ? usa:
+      pais =='uk' ? uk: ''
+    )"></p>
+    <p v-html="(
+      pais =='argentina' ? América do Sul:
+      pais =='brazil' ? América do Sul:
+      pais =='argentina' ? Ásia:
+      pais =='usa' ? América do Norte:
+      pais =='uk' ? Europa: ''
+    )"></p>
+  </div> -->
+
+
+
+
+  <script src="script5.js"></script>
+</body>
+</html>
