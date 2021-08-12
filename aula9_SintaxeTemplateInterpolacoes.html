@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+  <link rel="stylesheet" type="text/css" href="style9.css">
+  <title>Vue.js</title>
+</head>
+<body>
+  <div id='app'>
+      <header class="header">
+
+        {{ titulo }}<br>
+        <small v-html="subtitulo"></small>
+
+      </header>
+      <section class="container">
+        <section class="container__content">
+
+          <!-- {{ if(carregado) {return 'Sim'} else {return 'Não'}}}   NAO IRA ACEITAR POR SER UMA EXPRESSAO Com varios retornos, precisa ser ternario -->
+          {{ carregado ? 'Sim' : 'Não'}}
+        </section>
+        <aside class="container__sidebar">
+            {{ nome }}<br><br>
+
+            {{ nome.split('').reverse().join('') }}
+        </aside>
+
+      </section>
+      <footer class="footer">
+
+          <span v-text="copyright"></span>
+          <!-- {{ copyright }} -->
+
+      </footer>
+
+  </div>
+
+
+  <script src="script9.js"></script>
+</body>
+</html>
